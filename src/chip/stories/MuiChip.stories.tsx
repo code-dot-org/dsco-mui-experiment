@@ -15,15 +15,20 @@ type Story = StoryObj<typeof MuiChip>;
 
 const ChipsExample = () => (
   <Stack direction="row" spacing={1}>
-    <MuiChip label="Math" />
+    <MuiChip 
+      label="Math" 
+      tooltip="Math" 
+    />
     <MuiChip 
       label="Icon Left" 
       icon={<FontAwesomeV6Icon iconName="check" />} 
+      tooltip="Science, English" 
     />
     <MuiChip 
       label="Icon Right" 
       deleteIcon={<FontAwesomeV6Icon iconName="check" />} 
       onDelete={() => {}} 
+      tooltip="English, Science" 
     />
   </Stack>
 );
