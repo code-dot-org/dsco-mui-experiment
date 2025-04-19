@@ -108,6 +108,11 @@ const theme = {
         }
       }
     },
+    MuiSlider: {
+      defaultProps: {
+        size: 'small',
+      }
+    },
     MuiFormControlLabel: {
       styleOverrides: {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
