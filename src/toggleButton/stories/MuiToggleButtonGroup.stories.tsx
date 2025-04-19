@@ -5,7 +5,7 @@ import { MuiToggleButtonGroup, MuiToggleButtonGroupProps } from '../MuiToggleBut
 import { ToggleButton } from '@mui/material';
 
 const meta: Meta<typeof MuiToggleButtonGroup> = {
-  title: 'DesignSystem/MUI/ToggleButtonGroup',
+  title: 'DesignSystem/MUI/Segmented Buttons',
   component: MuiToggleButtonGroup,
   subcomponents: { ToggleButton },
 };
