@@ -197,6 +197,24 @@ const theme = {
         separator: '›',
       },
     },
+    MuiLink: {
+      styleOverrides: {
+        root: ({ theme }: { theme: Theme }) => ({
+          '.MuiBreadcrumbs-root &': {
+            fontSize: sizes.body.sm.fontSize,
+            fontWeight: theme.typography.fontWeightBold,
+            color: 'inherit',
+            textDecoration: 'none',
+            '&:hover': {
+              textDecoration: 'none',
+            },
+          },
+          '.MuiBreadcrumbs-root li:last-child &': {
+            color: colors.text.brand.teal.primary,
+          },
+        }),
+      },
+    },
   }
 }
 
