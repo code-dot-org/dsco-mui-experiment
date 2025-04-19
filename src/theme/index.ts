@@ -1,6 +1,6 @@
 import { merge } from 'lodash'
 
-import { createTheme } from '@mui/material/styles'
+import { createTheme, Theme } from '@mui/material/styles'
 
 import '@fontsource-variable/figtree'
 import '@fontsource-variable/noto-sans'
@@ -106,6 +106,19 @@ const theme = {
           padding: '0.625rem 1rem',
           ...sizes.body.lg,
         }
+      }
+    },
+    MuiFormControlLabel: {
+      styleOverrides: {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        label: ({ theme, ownerState }: { theme: Theme; ownerState: any }) => ({
+          fontSize: {
+            'small': sizes.body.sm.fontSize,
+            'medium': sizes.body.md.fontSize,
+            'large': sizes.body.lg.fontSize,
+          }[(ownerState?.control?.props?.size || 'medium') as string],
+          fontWeight: theme.typography.fontWeightMedium,
+        })
       }
     }
   }
