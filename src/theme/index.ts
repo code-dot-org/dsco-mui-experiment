@@ -84,13 +84,15 @@ const theme = {
   },
   components: {
     MuiButton: {
+      defaultProps: {
+        variant: 'contained',
+        color: 'secondary',
+        disableElevation: true,
+      },
       styleOverrides: {
         root: {
           fontWeight: typography.fontWeightSemiBold,
           textTransform: 'none', // don't use ALL CAPS buttons
-          boxShadow: 'none',
-          '&:hover': { boxShadow: 'none' },
-          '&:active': { boxShadow: 'none' },
         },
         sizeSmall: {
           padding: '0.3125rem 1rem',
