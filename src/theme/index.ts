@@ -153,6 +153,44 @@ const theme = {
           fontWeight: theme.typography.fontWeightMedium,
         })
       }
+    },
+    MuiAccordion: {
+      defaultProps: {
+        elevation: 0,
+      },
+      styleOverrides: {
+        root: ({ theme }: { theme: Theme }) => ({
+          border: `1px solid ${theme.palette.divider}`,
+        }),
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: ({ theme }: { theme: Theme }) => ({
+          backgroundColor: theme.palette.common.white,
+          fontSize: sizes.body.md.fontSize,
+          fontWeight: theme.typography.fontWeightBold,
+          padding: '.75rem 1.25rem',
+          '&.Mui-expanded': {
+            minHeight: 0,
+          },
+        }),
+        content: {
+          margin: 0,
+          '&.Mui-expanded': {
+            margin: 0,
+          },
+        },
+      },
+    },
+    MuiAccordionDetails: {
+      styleOverrides: {
+        root: ({ theme }: { theme: Theme }) => ({
+          fontSize: sizes.body.md.fontSize,
+          borderTop: `1px solid ${theme.palette.divider}`,
+          padding: '1.25rem',
+        }),
+      },
     }
   }
 }
