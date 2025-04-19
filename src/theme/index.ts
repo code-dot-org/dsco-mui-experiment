@@ -18,7 +18,26 @@ import './component-library-styles/variables.scss'
 import { colors } from './colors'
 import { cssVar } from './utils'
 
-// can be used like cssVar('--background-brand-teal-primary') in the code to load the variable
+const sizes = {
+  body: {
+    xs: {
+      fontSize: cssVar('--font-size-body-xs'),
+      lineHeight: 1.64,
+    },
+    sm: {
+      fontSize: cssVar('--font-size-body-sm'),
+      lineHeight: 1.54,
+    },
+    md: {
+      fontSize: cssVar('--font-size-body-md'),
+      lineHeight: 1.48,
+    },
+    lg: {
+      fontSize: cssVar('--font-size-body-lg'),
+      lineHeight: 1.4,
+    }
+  }
+}
 
 const typography = {
   fontFamily: '"Figtree Variable", "Figtree", "Noto Sans Variable", "Noto Sans", sans-serif',
@@ -72,6 +91,18 @@ const theme = {
           boxShadow: 'none',
           '&:hover': { boxShadow: 'none' },
           '&:active': { boxShadow: 'none' },
+        },
+        sizeSmall: {
+          padding: '0.3125rem 1rem',
+          ...sizes.body.sm,
+        },
+        sizeMedium: {
+          padding: '0.5rem 1rem',
+          ...sizes.body.md,
+        },
+        sizeLarge: {
+          padding: '0.625rem 1rem',
+          ...sizes.body.lg,
         }
       }
     }
