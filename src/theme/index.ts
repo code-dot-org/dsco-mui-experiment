@@ -83,6 +83,34 @@ const theme = {
     divider: colors.borders.neutral.primary,
   },
   components: {
+    MuiToggleButton: {
+      styleOverrides: {
+        root: ({ theme }: { theme: Theme }) => ({
+          textTransform: 'none',
+          fontWeight: theme.typography.fontWeightBold,
+          color: theme.palette.text.primary,
+          '&.Mui-selected': {
+            backgroundColor: theme.palette.primary.main,
+            color: theme.palette.primary.contrastText,
+            '&:hover': {
+              backgroundColor: theme.palette.primary.main,
+            },
+          },
+        }),
+        sizeSmall: {
+          padding: '0.3125rem 1rem',
+          ...sizes.body.sm,
+        },
+        sizeMedium: {
+          padding: '0.5rem 1rem',
+          ...sizes.body.md,
+        },
+        sizeLarge: {
+          padding: '0.625rem 1rem',
+          ...sizes.body.lg,
+        }
+      },
+    },
     MuiButton: {
       defaultProps: {
         variant: 'contained',

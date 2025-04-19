@@ -14,7 +14,7 @@ export default meta;
 type Story = StoryObj<typeof MuiToggleButtonGroup>;
 
 const UsesMuiToggleButtonGroup = (args: MuiToggleButtonGroupProps) => {
-  const [value, setValue] = React.useState('web')
+  const [value, setValue] = React.useState('label')
 
   return (
     <MuiToggleButtonGroup
@@ -23,9 +23,9 @@ const UsesMuiToggleButtonGroup = (args: MuiToggleButtonGroupProps) => {
       exclusive
       onChange={(_, val) => val && setValue(val)}
     >
-      <ToggleButton value="web">Web</ToggleButton>
-      <ToggleButton value="android">Android</ToggleButton>
-      <ToggleButton value="ios">iOS</ToggleButton>
+      <ToggleButton aria-label="label" value="label">Label</ToggleButton>
+      <ToggleButton aria-label="another-label" value="another-label">Another label</ToggleButton>
+      <ToggleButton aria-label="text" value="text">Text</ToggleButton>
     </MuiToggleButtonGroup>
   )
 }
