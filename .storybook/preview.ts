@@ -27,7 +27,6 @@ const preview: Preview = {
     GlobalStyles: CssBaseline,
     Provider: ThemeProvider,
     themes: {
-      // Provide your custom themes here
       light: lightTheme,
       dark: darkTheme,
     },
