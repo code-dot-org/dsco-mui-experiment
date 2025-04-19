@@ -191,7 +191,12 @@ const theme = {
           padding: '1.25rem',
         }),
       },
-    }
+    },
+    MuiBreadcrumbs: {
+      defaultProps: {
+        separator: '›',
+      },
+    },
   }
 }
 
