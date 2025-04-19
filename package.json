@@ -1,6 +1,5 @@
 {
-  "name": "dsco",
-  "private": true,
+  "name": "dsco-mui-experiment",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
