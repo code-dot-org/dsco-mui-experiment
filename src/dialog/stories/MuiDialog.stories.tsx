@@ -33,15 +33,14 @@ const UsesMuiDialog = (args: MuiDialogProps) => {
         open={open}
         onClose={handleClose}
       >
-        <DialogTitle>Dialog Title</DialogTitle>
+        <DialogTitle>Default Dialog</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            This is a sample dialog content. You can put any content here.
+            This is the content of the default dialog.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose} autoFocus>Confirm</Button>
+          <Button onClick={handleClose} autoFocus>Primary Action</Button>
         </DialogActions>
       </MuiDialog>
     </>
