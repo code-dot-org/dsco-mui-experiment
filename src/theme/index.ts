@@ -242,6 +242,16 @@ const theme = {
         }),
       },
     },
+    MuiRadio: {
+      defaultProps: {
+        size: 'small',
+      },
+      styleOverrides: {
+        root: {
+          padding: 0,
+        }
+      }
+    },
   }
 }
 
