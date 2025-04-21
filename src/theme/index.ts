@@ -6,6 +6,7 @@ import '@fontsource-variable/figtree'
 import '@fontsource-variable/noto-sans'
 import '@fontsource/barlow-semi-condensed'
 import '@fontsource/noto-sans-math'
+import "@fontsource/barlow-semi-condensed/600.css";
 
 import './component-library-styles/colors.scss'
 import './component-library-styles/font-awesome.scss'
@@ -227,6 +228,17 @@ const theme = {
           fontWeight: theme.typography.fontWeightBold,
           fontSize: sizes.body.xs.fontSize,
           letterSpacing: '0.04rem',
+        }),
+      },
+    },
+    MuiDialogTitle: {
+      styleOverrides: {
+        root: ({ theme }: { theme: Theme }) => ({
+          margin: '0 0 .5em 0',
+          fontFamily: '"Barlow Semi Condensed", sans-serif',
+          fontWeight: theme.typography.fontWeightBold,
+          fontSize: '2.125rem',
+          lineHeight: 1.24,
         }),
       },
     },
