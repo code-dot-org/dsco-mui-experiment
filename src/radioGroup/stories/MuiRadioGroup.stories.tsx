@@ -20,20 +20,16 @@ const UsesMuiRadioGroup = (args: MuiRadioGroupProps) => {
   };
 
   return (
-    <FormControl>
-      <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-      <MuiRadioGroup
-        {...args}
-        aria-labelledby="demo-radio-buttons-group-label"
-        name="radio-buttons-group"
-        value={value}
-        onChange={handleChange}
-      >
-        <FormControlLabel value="female" control={<Radio />} label="Female" />
-        <FormControlLabel value="male" control={<Radio />} label="Male" />
-        <FormControlLabel value="other" control={<Radio />} label="Other" />
-      </MuiRadioGroup>
-    </FormControl>
+    <MuiRadioGroup
+      {...args}
+      aria-labelledby="demo-radio-buttons-group-label"
+      name="radio-buttons-group"
+      value={value}
+      onChange={handleChange}
+    >
+      <FormControlLabel value="radio-1" control={<Radio />} label="RadioButton 1" />
+      <FormControlLabel value="radio-2" control={<Radio />} label="RadioButton 2" />
+    </MuiRadioGroup>
   );
 };
 
