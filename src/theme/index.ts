@@ -215,6 +215,21 @@ const theme = {
         }),
       },
     },
+    MuiChip: {
+      styleOverrides: {
+        root: ({ theme }: { theme: Theme }) => ({
+          backgroundColor: colors.background.brand.teal.light,
+          height: 'auto',
+          padding: '2px 4px 0px 4px',
+        }),
+        label: ({ theme }: { theme: Theme }) => ({
+          textTransform: 'uppercase',
+          fontWeight: theme.typography.fontWeightBold,
+          fontSize: sizes.body.xs.fontSize,
+          letterSpacing: '0.04rem',
+        }),
+      },
+    },
   }
 }
 
