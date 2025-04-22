@@ -9,5 +9,6 @@ yarn storybook
 
 ## Storybook
 
-You can view the current storybook here: https://code-dot-org.github.io/dsco-mui-experiment/
-It may be interesting to compare with the much more developed component-library storybook here: https://codedotorg.slack.com/archives/C08AMQ869QX/p1745348155172699
+You can view the current dsco-mui-experiment storybook here: https://code-dot-org.github.io/dsco-mui-experiment/
+
+Can contrast with the component-library storybook here: https://codedotorg.slack.com/archives/C08AMQ869QX/p1745348155172699
